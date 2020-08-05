@@ -33,16 +33,21 @@
     <p><h3>روش دوم</h3></p>
     <p><h4>با فایل App.js بروید و درون تابع ()render یک شیء جاوا اسکریپتی ایجاد کنید. سپس درون این شیء از خصوصیات استایل دهی در جاوا اسکریپت استفاده کنید؛ همانطور که می دانید استایل های CSS درون جاوا اسکریپت شکل خاص خود را دارند: به طور مثال background-color در css برابر با backgroundColor در جاوا اسکریپت است. انتظار می رود که با این مسائل در جاوا اسکریپت عادی آشنا شده و به آن ها تسلط داشته باشید.</h4></p>
     <pre dir="ltr"> ‍‍‍<code>
-        .Person {  
-        width: 60%;  
-      margin: 16px auto;  
-      border: 1px solid #eee;  
-      -webkit-box-shadow: 0 2px 3px #ccc;  
-      box-shadow: 0 2px 3px #ccc;  
-      padding: 16px;  
-      text-align: center;  
-    }</code></pre>
-    <p><h4></h4></p>
+        const style = {
+              backgroundColor: 'white',
+              font: 'inherit',
+              border: '1px solid blue',
+              padding: '8px',
+              cursor: 'pointer'
+            }
+    </code></pre>
+    <p><h4>این شیء جاوا اسکریپتی ما حاوی استایل های مورد نظر برای دکمه است. حالا به عنصر button میرویم و این شیء را به عنوان یک attribute استایل به کدهایمان اضافه می کنیم:</h4></p>
+    <pre dir="ltr"> ‍‍‍<code>
+            &lt;button
+                    style={style}
+            onClick={() => this.switchNameHandler('Maximilian!!')}&gt;Switch Name
+            &lt;/button&gt;
+        </code></pre>
     <p><h4></h4></p>
     <p><h4></h4></p>
     <p><h4></h4></p>
