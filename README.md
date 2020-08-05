@@ -44,8 +44,8 @@
     <p><h4>این شیء جاوا اسکریپتی ما حاوی استایل های مورد نظر برای دکمه است. حالا به عنصر button میرویم و این شیء را به عنوان یک attribute استایل به کدهایمان اضافه می کنیم:</h4></p>
     <pre dir="ltr"> ‍‍‍<code>
     &lt;button
-    style={style}
-    onClick={() => this.switchNameHandler('Maximilian!!')}&gt;Switch Name
+      style={style}
+      onClick={() => this.switchNameHandler('Maximilian!!')}&gt;Switch Name
     &lt;/button&gt;
     </code></pre>
     <p><h4></h4></p>
